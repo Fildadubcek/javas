@@ -1,128 +1,15 @@
-
-
-
-
-//Implementujte v JavaScriptu
-
-/*
-function createAndPrintArray() {
-    let array = []; // Inicializace prázdného pole
-    for (let i = 1; i <= 10; i++) {
-        array.push(i); // Přidání hodnoty do pole
-    }
-    console.log("Pole: ", array); // Vytištění pole do konzole
-}
-
-createAndPrintArray();
-*/
-
-
-/*
-function reverseArray() {
-    let n = parseInt(prompt("Zadejte počet čísel:"));
-    let array = [];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     
-    for (let i = 0; i < n; i++) {
-        array.push(parseInt(prompt(`Zadejte číslo ${i + 1}:`)));
-    }
-
-    console.log("Pole v opačném pořadí: ", array.reverse());
-}
-
-reverseArray();
-*/
-
-
-/*
-function sumAndAverage() {
-    let n = parseInt(prompt("Zadejte počet čísel:"));
-    let array = [];
-    let sum = 0;
-
-    for (let i = 0; i < n; i++) {
-        let num = parseInt(prompt(`Zadejte číslo ${i + 1}:`));
-        array.push(num);
-        sum += num;
-    }
-
-    let average = sum / n;
-    console.log("Pole: ", array);
-    console.log("Součet: ", sum);
-    console.log("Průměr: ", average);
-}
-
-sumAndAverage();
-*/
-
-/*
-function countDuplicates() {
-    let n = parseInt(prompt("Zadejte počet čísel:"));
-    let array = [];
-
-    for (let i = 0; i < n; i++) {
-        array.push(parseInt(prompt(`Zadejte číslo ${i + 1}:`)));
-    }
-
-    let counts = {};
-    for (let num of array) {
-        counts[num] = (counts[num] || 0) + 1;
-    }
-
-    for (let [key, value] of Object.entries(counts)) {
-        console.log(`Číslo ${key} se opakuje ${value}x`);
-    }
-}
-
-countDuplicates();
-*/
-
-/*
-function findMinMax() {
-    let n = parseInt(prompt("Zadejte počet čísel:"));
-    let array = [];
-
-    for (let i = 0; i < n; i++) {
-        array.push(parseInt(prompt(`Zadejte číslo ${i + 1}:`)));
-    }
-
-    let max = Math.max(...array);
-    let min = Math.min(...array);
-
-    console.log("Pole: ", array);
-    console.log("Maximální hodnota: ", max);
-    console.log("Minimální hodnota: ", min);
-}
-
-findMinMax();
-*/
-
-/*
-function separateEvenOdd() {
-    let n = parseInt(prompt("Zadejte počet čísel:"));
-    let array = [];
-    let even = [];
-    let odd = [];
-
-    for (let i = 0; i < n; i++) {
-        let num = parseInt(prompt(`Zadejte číslo ${i + 1}:`));
-        array.push(num);
-        if (num % 2 === 0) {
-            even.push(num);
-        } else {
-            odd.push(num);
-        }
-    }
-
-    console.log("Pole sudých čísel: ", even);
-    console.log("Pole lichých čísel: ", odd);
-}
-
-separateEvenOdd();
-*/
-
-//Dvourozměrné pole
-
-// function createAndFindMinMax(N, M) {
+</body>
+<script>
+    // function createAndFindMinMax(N, M) {
 //     let matrix = [];
 //     let min = Infinity;
 //     let max = -Infinity;
@@ -299,3 +186,5 @@ separateEvenOdd();
 // }
 
 // main();
+</script>
+</html>

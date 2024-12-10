@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
 
 
 
@@ -299,3 +310,47 @@ separateEvenOdd();
 // }
 
 // main();
+
+// Funkce pro výpočet determinantu pomocí Bareissova algoritmu
+function determinantBareiss(matrix) {
+    let n = matrix.length;
+
+    // Kopírování matice do nové matice, aby původní zůstala nezměněna
+    let A = matrix.map(row => row.slice());
+
+    // Procházíme každý sloupec matice
+    for (let k = 0; k < n - 1; k++) {
+        // Pro každý řádek pod diagonálou
+        for (let i = k + 1; i < n; i++) {
+            // Určíme faktor, kterým vynásobíme řádek
+            let factor = A[i][k] / A[k][k];
+
+            // Odečteme upravené řádky od sebe
+            for (let j = k + 1; j < n; j++) {
+                A[i][j] = A[i][j] * A[k][k] - A[k][j] * A[i][k];
+            }
+        }
+    }
+
+    // Po úpravách matice spočítáme determinant jako součin diagonálních prvků
+    let determinant = A[0][0];
+    for (let i = 1; i < n; i++) {
+        determinant *= A[i][i];
+    }
+
+    return determinant;
+}
+
+// Testování
+let matrix = [
+    [4, 3, 2],
+    [3, 2, 1],
+    [2, 1, 3]
+];
+
+console.log("Determinant matice: " + determinantBareiss(matrix));
+
+
+
+</script>
+</html>

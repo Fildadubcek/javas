@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //     function sortStringAlphabetically(text) {
+    //
+    //     return text.split('').sort().join('');
+    // }
+    // const input = "ahojsvěte";
+    // const sortedText = sortStringAlphabetically(input);
+    // console.log(sortedText); 
+
+
+    // function isPrime(number) {
+
+    //     if (number < 2) {
+    //         return false;
+    //     }
+
+    //     for (let i = 2; i <= Math.sqrt(number); i++) {
+    //         if (number % i === 0) {
+    //             return false;
+    //         }
+    //     }
+
+    //     return true;
+    // }
+
+    // console.log(isPrime(2));
+    // console.log(isPrime(4));
+    // console.log(isPrime(13));
+
+
+
+//     const usedPasswords = []; 
+
+// function generatePassword(length) {
+//     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//     let password = "";
+
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * characters.length);
+//         password += characters[randomIndex];
+//     }
+
+//     return password;
+// }
+
+// function generateUniquePassword(length) {
+//     let newPassword;
+
+//     do {
+//         newPassword = generatePassword(length);
+//     } while (usedPasswords.includes(newPassword));
+
+//     usedPasswords.push(newPassword);
+
+//     return newPassword;
+// }
+
+// console.log(generateUniquePassword(8));  
+// console.log(generateUniquePassword(8)); 
+// console.log(usedPasswords);              
+
+
+
+
+function countCharacterOccurrences(text, char) {
+    let count = 0;
+
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] === char) {
+            count++; 
+        }
+    }
+
+    return count;
+}
+
+console.log(countCharacterOccurrences("hello world", "o")); 
+console.log(countCharacterOccurrences("JavaScript is awesome", "a")); 
+console.log(countCharacterOccurrences("testovací text", "t")); 
+
+
+
+</script>
+
+</html>
